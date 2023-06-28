@@ -1,0 +1,71 @@
+
+
+.fondo {
+    height: 300px;
+    overflow: hidden;
+    background: linear-gradient(45deg, #BB59FF, #FD6FFF, #449CFF);
+}
+
+.tema-night .fondo {
+    background: linear-gradient(45deg, #101112, #2C2D31);
+}
+
+.fondo span {
+    display: block;
+    width: 80px;
+    height: 80px;
+    background-color: #A5FF81;
+    position: absolute;
+    transform: translateX(-50%);
+    animation: vuelta 8s linear infinite normal both;
+}
+
+@keyframes vuelta {
+    from {
+        transform: rotate(0deg);
+        bottom: calc(0px - 100px);
+        opacity: 0;
+    }
+
+    20% {
+        opacity: .5;
+    }
+
+    50% {
+        opacity: .5;
+    }
+
+    to {
+        transform: rotate(360deg);
+        bottom: calc(100% + 100px);
+        opacity: 0;
+    }
+}
+
+@each $key, $value in $cuadrillos {
+    .fondo span:nth-child(#{$key}) {
+        background-color: map-get($value, "bg");
+        width: map-get($value, "cua");
+        height: map-get($value, "cua");
+        @if map-get($value, "duration") != none {
+            animation-duration: map-get($value, "duration");
+        }
+    }
+}
+
+@each $key, $value in $spans {
+    .fondo span:nth-child(#{$key}) {
+        left: map-get($value, "left");
+        @if map-get($value, "left") != none {
+            animation-delay: map-get($value, "delay");
+        }
+    }
+}
+
+
+@media (max-width: 825px) {
+    .fondo span {
+        animation: none !important;
+        display: none !important;
+    }
+}

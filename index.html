@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apock gráficos portafolio</title>
+    <meta name="author" content="Yenerson Hernandez, Yelainer Hernandez">
+    <meta name="copyright" content="Apock graficos">
+    <meta name="description" content="Diseñador y desarrollador web Front-end, Colombiano">
+    <meta name="keywords" content="Desarrollador front-end, diseñador grafico, desarrollador de interfaz grafica con tecnologia web">
+    <link rel="icon" href="assets/img/icon-apock-graficos.ico">
+    <link rel="stylesheet" type="text/css" href="assets/css/index.css">
+    <link rel="stylesheet" type="text/css" href="assets/icon-font/iconos.css">
+    <link rel="stylesheet" type="text/css" href="assets/icon-font/devicon.css">
+    <script src="assets/js/vue-v2.min.js"></script>
+</head>
+<body>
+    <header class="contenedor">
+        <div class="flexi just-centro tema-gra-pre">
+            <div class="panel-top flexi just-centro">
+                <article class="tarj presentacion-header t-med">
+                    <div class="bloq-avatar tam-med marg-der-med borde-sombra-peq">
+                        <img src="assets/img/AG-Desing.png" alt="">
+                    </div>
+                    <div class="bloq">
+                        <p class="bloq globo sombra-peq flecha-izq tema-pre">
+                            ¡Hoola y bienvenido a Apock gráficos!
+                        </p>
+                        <p class="bloq globo sombra-peq tema-pre">
+                            Haz un tour por todo lo que hacemos, así nos conocerás y tendrás la confianza para realizar tus proyecto con nosotros.
+                        </p>
+                    </div>
+                </article>
+                <div class="pos-absoluta botones-redes flexcol">
+                    <a href="https://github.com/Apock-graficos" target="_blank" class="boton-cir peq tema-claro" title="">
+                        <i class="devicon-github-plain"></i>
+                    </a>
+                    <a href="https://www.instagram.com/apockgraficos" target="_blank" class="boton-cir peq tema-claro" title="">
+                        <i class="icon-instagram"></i>
+                    </a>
+                    <a href="https://www.youtube.com/ApockGraficos" target="_blank" class="boton-cir peq tema-claro" title="">
+                        <i class="icon-youtube"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="fondo bloque" id="fondo_anim"></div>
+    </header>
+    <main class="contenedor anmax-gra">
+        <div class="flexi just-centro seccion-prim anmax-heredado">
+            <div class="cel-9 tb-11 flexi">
+                <div class="cel-auto pant-tb-nula prioridad-med" id="app-movil">
+                    <!--=============================
+                =            celular            =
+                ==============================-->
+                    <movil-aside></movil-aside>
+                    <!--====  End of celular  ====-->
+                </div>
+                <!-- seccion dos -->
+                <div class="cel tb-12 marg-izq-gra">
+                    <div class="flexi just-final">
+                        <div class="cel-11 tb-12 marg-aba-gra">
+                            <div class="contenedor" id="conocenos">
+                                <div class="bloque rell-med tema-claro redon-med sombra-med">
+                                    <h3 class="marg-aba-peq">¡Conocenos!</h3>
+                                    <div class="bloque t-med">
+                                        <!-- <p>Hola! me llamo <strong class="tex-pre">Yenerson Hernández</strong>. Desarrollador y diseñador Front-end.<br>Me gusta todo lo que tiene que ver con el Front. He participado en múltiples proyectos de mi País. Dejando muchos clientes satisfechos con nuestro trabajo.</p>
+                                        <p>Mis habilidades principales</p> -->
+                                        <!--  --><p id="yuca" class="cursor-parpadeante"></p>
+                                    </div>
+                                </div>
+                                <div class="flexi just-final seccion-yenerson alin-der marg-arr--med marg-aba-peq pos-relativa">
+                                    <div class="yener-img">
+                                        <div class="grupo-barras pant-mv-nula">
+                                            <div class="barra sombra-med" v-for="item of skillsYener" :key="item.id">
+                                                {{ item }}
+                                            </div>
+                                        </div>
+                                        <img class="img-yenr-yel" src="assets/img/alone.png" alt="Apock graficos yenerson hernandez lopez">
+                                    </div>
+                                    <span class="bloq-flo nombre-yenr t-h4 flecha-aba fle-med">
+                                        Yenerson H.L
+                                    </span>
+                                </div>
+                                <div class="bloque seccion-yelainer pos-relativa">
+                                    <div class="yela-img">
+                                        <img src="assets/img/yelainer-baja.png" alt="">
+                                        <div class="grupo-barras pant-mv-nula alin-der">
+                                            <div class="barra sombra-med" v-for="item of skillsYela" :key="item.id">
+                                                {{ item }}
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <span class="bloq-flo nombre-crow t-h4 flecha-arr fle-med">
+                                        Yelainer H.L
+                                    </span>
+                                </div>
+                                <div class="bloque rell-med tema-claro redon-med sombra-gra">
+                                    <div class="bloque t-med">
+                                        <p>Somos creativo y siempre estamos llenos de ideas para aplicar en los proyectos que se nos presente.</p>
+                                        <p>También nos gusta crear diseño UX UI e ilustraciones gráficas</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- skills -->
+                        <div class="contenedor marg-arr-gra" id="dominamos">
+                            <div class="cel-12">
+                                <article class="tarj presentacion-header t-med">
+                                    <div class="bloq-avatar tam-med marg-der-med borde-sombra-peq">
+                                        <img src="assets/img/AG-Desing.png" alt="">
+                                    </div>
+                                    <div class="bloq flexi alin-inicio">
+                                        <div class="bloq-auto globo sombra-peq flecha-izq tema-pre marg-aba-peq">
+                                            <h5 class="marg-aba-min">Campos que dominamos</h5>
+                                            <p>Como desarrolladores hemos dividido nuestro conocimiento para ampliar mas espacio en nuestro desarrollo.</p>
+                                            <ul>
+                                                <li>Yenerson de lado front-end</li>
+                                                <li>Yelainer en el lado de Back-end</li>
+                                            </ul>
+                                        </div>
+                                        <div class="bloq-auto globo sombra-peq tema-pre">
+                                            <h5>Habilidades de: {{ nameselect }} HL.</h5>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="flexi just-centro marg-aba-med pos-relativa perfil-skills fondo-claro prioridad-nor" style="position: sticky; top: 0;">
+                                <div class="flexi just-espaciar rell-arr-gra">
+                                    <div class="cel-auto" v-for="perfil of perfiles" :key="perfil.id">
+                                        <div class="bloq-avatar tam-med cur-mano" v-on:click="perfilskills(perfil.name)">
+                                            <img :src="perfil.img" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div v-bind:class="['punta-arr punt-med hr borde-pre', { 'next': punta }]"></div>
+                            </div>
+                            <div class="flexcol cel-12 marg-aba-gra" id="niveles">
+                                <div v-bind:class="['tarj barra-nivel', iten.tema]" v-for="iten of skills" :key="iten.id">
+                                    <div v-bind:class="['cel-auto marg-der-gra t-h1', iten.tema]">
+                                        <i v-bind:class="['icono', iten.icon]"></i>
+                                    </div>
+                                    <div class="cel">
+                                        <h5 class="titulo">{{ iten.titulo }}</h5>
+                                        <span class="t-med">{{ iten.texto }}</span>
+                                        <div class="bloq-cel nivel sombra-med">
+                                            <div class="barra" v-bind:style="'width:'+ iten.porcentaje +'%'">
+                                                <span v-for="i in 4" :key="i.id"></span>
+                                                <div class="burbuja-porcentaje flexi alin-centro just-centro flecha-arr sombra-med">
+                                                    <span>{{ iten.porcentaje }}%</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="cel-11 tb-12 marg-aba-gra">
+                            <article class="tarj presentacion-header t-med">
+                                <div class="bloq-avatar tam-med marg-der-med borde-sombra-peq">
+                                    <img src="assets/img/AG-Desing.png" alt="">
+                                </div>
+                                <div class="bloq flexi alin-inicio">
+                                    <p class="bloq-auto globo sombra-peq flecha-izq tema-pre">
+                                        Aquí una presentación de nuestra capacidad creativa. dale <b>click</b> en cualquiera para ver mas
+                                    </p>
+                                    <p class="bloq-auto globo sombra-peq tema-pre">
+                                        Tres estilos de paginas diferentes!
+                                    </p>
+                                </div>
+                            </article>
+                        </div>
+
+                        <div class="celda-col-2 fil-2 sep-peq an-11 tb-12 alin-celdas prioridad-med" id="galeria">
+                            <a
+                            target="_blank"
+                            :href="item.url"
+                            class="cart sombra-med redon-med desborde-oculto"
+                            v-for="item of demos">
+                                <img :src="item.img" alt="">
+                                <div class="bloq-cortina flexi just-centro alin-centro vidrio-pre">
+                                    <div class="bloq-flo alin-cen tex-claro rell-med">
+                                        <h4 class="marg-aba-peq">{{ item.titulo }}</h4>
+                                        <span class="t-med">{{ item.desc }}</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="flexi lg-med fondo-fijo seccion-queso prioridad-nor" id="descamos">
+            <span class="bloq-cortina"></span>
+            <div class="img-yenr pant-tb-nula">
+                <img src="assets/img/yenr-1.png" alt="">
+                <img src="assets/img/yenr-2.png" alt="">
+            </div>
+            <div class="seccion-tarj">
+                <div class="tarj-creativa rell-peq fondo-claro sombra-med redon-red alin-centro">
+                    <div class="bloq-icono tam-gra gradiante-cielo">
+                        <i class="icon-cool2 t-h3"></i>
+                    </div>
+                    <div class="bloq-cuerpo marg-izq-med">
+                        <h5 class="marg-aba-min texto-cielo">Llenos de ideas</h5>
+                        <p class="t-med tex-mudo">Como creadores siempre estamos a la banguardia de ideas nuevas que aplicar en los proyectos que se no presentan.</p>
+                    </div>
+                </div>
+                <div class="tarj-creativa rell-peq fondo-claro sombra-med redon-red alin-centro">
+                    <div class="bloq-icono tam-gra gradiante-verde tex-claro">
+                        <i class="icon-books t-h3"></i>
+                    </div>
+                    <div class="bloq-cuerpo marg-izq-med">
+                        <h5 class="marg-aba-min texto-verde">Conocimiento constante</h5>
+                        <p class="t-med tex-mudo">Siempre estamos actualizandonos con los últimos cambios en la tecnología. para estar a la vanguardia</p>
+                    </div>
+                </div>
+                <div class="tarj-creativa rell-peq fondo-claro sombra-med redon-red alin-centro">
+                    <div class="bloq-icono tam-gra gradiante-naranja">
+                        <i class="icon-checkmark t-h3"></i>
+                    </div>
+                    <div class="bloq-cuerpo marg-izq-med">
+                        <h5 class="marg-aba-min texto-naranja">Diseño originales</h5>
+                        <p class="t-med tex-mudo">Dibujamos desde que tenemos memoria lo cual nos facilita la creación de diseños e ilustraciones. aun que reciclar es una opcion. bueno con unos cambios ya es nuevo :)</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="flexi just-centro marg-aba-gra" id="seleccion">
+            <div class="cel-9" id="correo">
+                <div class="flexi secciones-drag">
+                    <div class="cel-6 tb-12 borde-der pant-tb-nula">
+                        <div class="bloque marg-aba-peq">
+                            <h4 class="texto-violeta">¿Qué quieres que hagamos?</h4>
+                            <p class="tex-mudo t-med">Arrastra los elementos al Carrito, según lo que quieres de nosotros.</p>
+                        </div>
+                        <div class="celda-col-3 sep-med lista marg-aba-med" id="listaUno">
+                            <div :class="['cart-seleccion alin-centro sombra-med cur-mover', { 'filtered' : iten.id === 0}]" v-for="iten of seleccion">
+                                <div class="bloq-icono tam-gra gradiante-violeta marg-aba-min">
+                                    <i v-bind:class="['t-h4', iten.icon]"></i>
+                                </div>
+                                <div class="bloq-cel alin-cen">
+                                    <h6 class="t-peq">{{ iten.titulo }}</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cart-ususario-divisor">
+                            <div class="boq-cel cabecera">
+                                <div class="bloq-icono tam-med">
+                                    <i class="icon-neutral" id="carita"></i>
+                                </div>
+                            </div>
+                            <div class="bloq-cuerpo">
+                                <p class="bloq-cel descripcion">descripcion corta del perfil</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cel-divisor pant-tb-nula">
+                        <div class="bloq-icono sombra-peq tema-claro tam-med">
+                            <i class="icon-redo2"></i>
+                        </div>
+                    </div>
+                    <form class="cel-6 tb-12" method="post" action="#" v-on:submit.prevent>
+                        <div class="pant-tb-nula">
+                            <div class="bloque marg-aba-peq">
+                                <h4 class="texto-cielo"><i class="icon-cart i-izq"></i> Carrito.</h4>
+                                <p class="tex-mudo t-med">Carrito de lo que quiero :D</p>
+                            </div>
+                            <div class="bloque scroll-y marg-aba-peq" style="height: 170px;">
+                                <div class="celda-col-3 sep-med lista marg-aba-med" id="listaDos">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form estilo-burbuja direccion-columna">
+                            <input type="text" placeholder="Nombre completo" v-model="formDato.nombre" maxlength="120" required>
+                            <input type="email" placeholder="correo" v-model="formDato.correo" maxlength="120" required>
+                            <div class="bloq-form tipo-texarea">
+                                <textarea placeholder="Mensaje" v-model="formDato.descripcion" maxlength="250" required></textarea>
+                                <div v-bind:class="['bloq-flo', colorTexto]">
+                                    {{ contCaractDesc }}
+                                </div>
+                            </div>
+                            <button type="button" :class="['boton gradiante-cielo btn-whapp', { 'inactivo' : !canSend }]" v-on:click="enviarDatos" :disabled="!canSend">
+                                <i class="i-izq" :class="canSend ? 'icon-whatsapp':'icon-lock'"></i>
+                                <span class="textos">
+                                    <span>Aun no puede enviar</span>
+                                    <span>Enviar whatsapp</span>
+                                </span>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="flexi alin-centro just-entre rell-ver-med">
+        <div class="cel-4 alin-der">
+            No renuncies
+        </div>
+        <div class="cel-4 alin-cen">
+            <img src="assets/img/AG-Desing.png" alt="" width="80">
+            <p class="bloque marg-arr-min t-med tex-mudo">
+                Apock gráficos
+            </p>
+        </div>
+        <div class="cel-4 alin-izq">
+            A tus sueños
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.13.0/Sortable.min.js"></script>
+    <script type="text/javascript" src="assets/js/script-movil.js"></script>
+    <script type="text/javascript" src="assets/js/jscript.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,276 @@
+
+
+.sep-lin-peq {
+    line-height: 1.5;
+}
+
+.barra-nivel {
+    margin-bottom: 2.75rem;
+}
+
+.nivel {
+    display: block;
+    width: 100%;
+    height: 17px;
+    background-color: #fff;
+    margin-top: 1rem;
+    border-radius: 10px;
+    position: relative;
+}
+
+.nivel .barra {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    border-radius: 5rem 0 0 5rem;
+    transition: all ease-in 250ms;
+}
+
+.burbuja-porcentaje {
+    position: absolute;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    right: -18px;
+    top: 8px;
+    font-size: .9em;
+    color: #fff;
+}
+
+.burbuja-porcentaje::before {
+    top: -15px;
+}
+
+/* purpura */
+.gradiante-cielo,
+.gradiante-violeta,
+.gradiante-naranja,
+.gradiante-purpura {
+    color: #fff;
+}
+
+.gradiante-verde,
+.nivel-verde .barra {
+    background: linear-gradient(45deg, #37C03A, #8fc037);
+}
+
+.texto-verde,
+.nivel-verde .titulo,
+.nivel-verde .icono {
+    color: #37C03A;
+}
+
+.nivel-verde .burbuja-porcentaje::before {
+    border-bottom-color: #37C03A;
+}
+
+.nivel-verde .burbuja-porcentaje {
+    background-color: #37C03A;
+}
+
+.gradiante-naranja,
+.nivel-naranja .barra {
+    background: linear-gradient(45deg, #FF9946, #ff466e);
+}
+
+.texto-naranja,
+.nivel-naranja .titulo,
+.nivel-naranja .icono {
+    color: #FF9946;
+}
+
+.nivel-naranja .burbuja-porcentaje::before {
+    border-bottom-color: #FF9946;
+}
+
+.nivel-naranja .burbuja-porcentaje {
+    background-color: #FF9946;
+}
+
+.gradiante-carmin,
+.nivel-carmin .barra {
+    background: linear-gradient(45deg, #CA1D5B, #c61dca);
+}
+
+.texto-carmin,
+.nivel-carmin .titulo,
+.nivel-carmin .icono {
+    color: #CA1D5B;
+}
+
+.nivel-carmin .burbuja-porcentaje::before {
+    border-bottom-color: #CA1D5B;
+}
+
+.nivel-carmin .burbuja-porcentaje {
+    background-color: #CA1D5B;
+}
+
+.gradiante-cielo,
+.nivel-cielo .barra {
+    background: linear-gradient(45deg, #2698E0, #26e0ac);
+}
+
+.texto-cielo,
+.nivel-cielo .titulo,
+.nivel-cielo .icono {
+    color: #2698E0;
+}
+
+.nivel-cielo .burbuja-porcentaje::before {
+    border-bottom-color: #2698E0;
+}
+
+.nivel-cielo .burbuja-porcentaje {
+    background-color: #2698E0;
+}
+
+.gradiante-morado,
+.nivel-morado .barra {
+    background: linear-gradient(45deg, #8F26E0, #2639e0);
+}
+
+.texto-morado,
+.nivel-morado .titulo,
+.nivel-morado .icono {
+    color: #8F26E0;
+}
+
+.nivel-morado .burbuja-porcentaje::before {
+    border-bottom-color: #8F26E0;
+}
+
+.nivel-morado .burbuja-porcentaje {
+    background-color: #8F26E0;
+}
+
+.gradiante-cia,
+.nivel-cia .barra {
+    background: linear-gradient(45deg, #26E08B, #3de026);
+}
+
+.texto-cia,
+.nivel-cia .titulo,
+.nivel-cia .icono {
+    color: #26E08B;
+}
+
+.nivel-cia .burbuja-porcentaje::before {
+    border-bottom-color: #26E08B;
+}
+
+.nivel-cia .burbuja-porcentaje {
+    background-color: #26E08B;
+}
+
+.gradiante-rojo,
+.nivel-rojo .barra {
+    background: linear-gradient(45deg, #F14B4B, #f14bba);
+}
+
+.texto-rojo,
+.nivel-rojo .titulo,
+.nivel-rojo .icono {
+    color: #F14B4B;
+}
+
+.nivel-rojo .burbuja-porcentaje::before {
+    border-bottom-color: #F14B4B;
+}
+
+.nivel-rojo .burbuja-porcentaje {
+    background-color: #F14B4B;
+}
+
+.gradiante-amarillo,
+.nivel-amarillo .barra {
+    background: linear-gradient(45deg, #FFE066, #ff7a66);
+}
+
+.texto-amarillo,
+.nivel-amarillo .titulo,
+.nivel-amarillo .icono {
+    color: #FFE066;
+}
+
+.nivel-amarillo .burbuja-porcentaje::before {
+    border-bottom-color: #FFE066;
+}
+
+.nivel-amarillo .burbuja-porcentaje {
+    background-color: #FFE066;
+}
+
+.gradiante-violeta,
+.nivel-violeta .barra {
+    background: linear-gradient(45deg, #E466FF, #7e66ff);
+}
+
+.texto-violeta,
+.nivel-violeta .titulo,
+.nivel-violeta .icono {
+    color: #E466FF;
+}
+
+.nivel-violeta .burbuja-porcentaje::before {
+    border-bottom-color: #E466FF;
+}
+
+.nivel-violeta .burbuja-porcentaje {
+    background-color: #E466FF;
+}
+
+.nivel .barra>span {
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+    position: absolute;
+    left: 0;
+    top: -8px;
+    animation: burbuja 7s ease-in infinite normal both;
+    opacity: 0;
+}
+
+.nivel .barra>span:nth-child(1) {
+    top: 10px;
+    animation-delay: 3s;
+    animation-duration: 5s;
+}
+
+.nivel .barra>span:nth-child(2) {
+    top: 5px;
+    animation-delay: 8s;
+    animation-duration: 8s;
+}
+
+.nivel .barra>span:nth-child(2) {
+    top: 3px;
+    animation-delay: 5s;
+    animation-duration: 11s;
+    width: 10px;
+    height: 10px;
+}
+
+@keyframes burbuja {
+    from {
+        left: -20px;
+        opacity: 0;
+    }
+
+    25% {
+        opacity: .5;
+    }
+
+    75% {
+        opacity: .5;
+    }
+
+    to {
+        left: 100%;
+        opacity: 0;
+    }
+}

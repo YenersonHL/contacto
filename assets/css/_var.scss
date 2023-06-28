@@ -1,0 +1,68 @@
+$spans: (
+    '1': (
+        'left': 0,
+        'delay': none
+    ),
+    '2': (
+        'left': 10%,
+        'delay': 2s
+    ),
+    '3': (
+        'left': 15%,
+        'delay': none
+    ),
+    '4': (
+        'left': 20%,
+        'delay': 5s
+    ),
+    '5': (
+        'left': 30%,
+        'delay': 12s
+    ),
+    '6': (
+        'left': 40%,
+        'delay': 4s
+    ),
+    '7': (
+        'left': 50%,
+        'delay': 1s
+    ),
+    '8': (
+        'left': 60%,
+        'delay': none
+    ),
+    '9': (
+        'left': 70%,
+        'delay': 10s
+    ),
+    '10': (
+        'left': 80%,
+        'delay': none
+    ),
+    '11': (
+        'left': 90%,
+        'delay': 8s
+    ),
+    '12': (
+        'left': 95%,
+        'delay': none
+    ),
+);
+
+$cuadrillos: (
+    '2n': (
+        'bg': #62E6DB,
+        'cua': 60px,
+        'duration': 15s,
+    ),
+    '3n': (
+        'bg': #FFC156,
+        'cua': 40px,
+        'duration': 10s,
+    ),
+    '4n': (
+        'bg': #EAFF88,
+        'cua': 20px,
+        'duration': none,
+    ),
+);
